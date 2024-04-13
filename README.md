@@ -1,25 +1,25 @@
-# Web Development Project 7 - *Name of App Here*
+# Web Development Project 7 - *Crewmates*
 
-Submitted by: **Your Name Here**
+Submitted by: **Edward S Bordenave**
 
-This web app: **insert description**
+This web app: **MTG Custom Card Maker**
 
-Time spent: **X** hours spent in total
+Time spent: **12** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] **A create form allows users to add new cremates**
-- [ ] **Users can name the crewmate and set the crewmate's attributes by clicking on one of several values**
-- [ ] **The site displays a summary page of all the user's added crewmates**
-- [ ] **A previously created crewmate can be updated from the crewmate list**
-- [ ] **A previously created crewmate can be deleted from the crewmate list**
-- [ ] **Each crewmate has a direct, unique link to an info page about them**
+- [x] **A create form allows users to add new cremates**
+- [x] **Users can name the crewmate and set the crewmate's attributes by clicking on one of several values**
+- [x] **The site displays a summary page of all the user's added crewmates**
+- [x] **A previously created crewmate can be updated from the crewmate list**
+- [x] **A previously created crewmate can be deleted from the crewmate list**
+- [x] **Each crewmate has a direct, unique link to an info page about them**
 
 The following **optional** features are implemented:
 
-- [ ] A crewmate can be given a category upon creation which restricts their attributes
+- [x] A crewmate can be given a category upon creation which restricts their attributes
 - [ ] The site displays summary statistics about a user's crew on their crew page
 - [ ] The site displays a custom "success" metric about a user's crew which changes the look of the crewmate list
 
@@ -34,7 +34,7 @@ Here's a walkthrough of implemented user stories:
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...
+GIF created with Kap
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -42,7 +42,9 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Early on when I started this project, I had (correctly) assumed that fetching data from postgres would be similar to doing it with axios. I figured using a try-catch to handle errors would be best practice. Rather than implementing, I followed a supabase tutorial that completely glossed over this. Towards the end of the project, I was running into errors, 400 and 409 and to try to debug it would take too long for the submission. I spent too much time already trying to debug it but I realize now that I was never catching the errors, console.log would only return [object Object]
+
+Another issue I had wa trying to adapt my idea to project requirements. I think I did it but we'll see.
 
 ## License
 
