@@ -1,0 +1,207 @@
+
+/*.edit_button .material-icons:hover {*/
+/*    cursor: pointer;*/
+/*}*/
+
+
+
+
+/*1500×2100*/
+
+
+.view-card-container {
+    height: 420px;
+    width: 300px;
+    border: 1px solid black;
+    /*30% original size*/
+    margin: 56px auto 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    border-radius: 25px;
+    box-sizing: border-box;
+
+    /*background: #171314; */
+}
+
+.view-card-background {
+    height: 364px;
+    margin: 20px 20px 0 20px;
+    border-radius: 6px 6px 8% 8%;
+    background-color: #bbb;
+}
+
+.view-card-container {
+    background: #171314;
+}
+
+.view-card-frame {
+    z-index: 1;
+    position: relative;
+    height: 108%;
+    max-width: 97%;
+    left: 1.8%;
+    top: 0.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.view-card-background {
+    z-index: 0;
+}
+
+/*
+ — — — — — — — — — — — — -
+ — — — — — — — — — — — — -
+ BORDERS
+ — — — — — — — — — — — — -
+ — — — — — — — — — — — — -
+*/
+.view-frame-header,
+.view-frame-type-line {
+    border-bottom: 4px solid #a9a9a9;
+    border-left: 2px solid #a9a9a9;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+}.view-frame-header,
+ .view-frame-art,
+ .view-frame-type-line {
+     box-shadow:
+             0 0 0 2px #171314,
+             0 0 0 5px #26714A,
+             -3px 3px 2px 5px #171314;margin-bottom: 7px;
+ }.view-frame-text-box {
+      box-shadow:
+              0 0 0 5px #26714A,
+              -3px 3px 2px 5px #171314;
+  }
+
+/*
+— — — — — — — — — — —
+— — — — — — — — — — —
+OVERFLOW
+— — — — — — — — — — —
+— — — — — — — — — — —
+*/
+.view-frame-header,
+.view-frame-type-line,
+.view-frame-text-box {
+    overflow: hidden;
+}
+
+.view-frame-header,
+.view-frame-type-line {
+    background:
+            linear-gradient( 0deg, rgba(201, 216, 201, .3), rgba(201, 216, 209, .3) ),
+            url(https://image.ibb.co/jKByZn/tile_bg_1.jpg);
+    display: flex;
+    margin-top: 7px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 4px 0;
+    justify-content: space-between;
+    border-radius: 12px/28px;
+    font-family: 'Magic Cards', sans-serif;
+}
+
+.view-name,
+.view-type {
+    font-size: 1.3em;
+    margin-left: 10px;
+    align-self: baseline;
+    font-weight: 600;
+}
+
+.view-name a {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+#mana-icon {
+    font-size: 1.4em;
+    background: #ADD3AC;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: -0.05em 0.12em 0px 0 black;
+    margin-right: 5px;
+    height: 20px;
+    align-self: center;
+}
+
+.view-frame-art {
+    height: 35%; /* make it fit in the card */
+    margin: 0 10px; /* align it vertically */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.view-frame-text-box {
+    margin: 0 10px;
+    background: #d3ded6 url(https://image.ibb.co/dFcNx7/tile_bg_2.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px 6px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    font-family: 'Magic Cards', sans-serif;
+}
+
+.view-abilities-text {
+    font-family: "Magic Cards",sans-serif;
+}
+
+.view-flavor-text {
+    font-style: italic;
+    font-family: "Times New Roman",sans-serif;
+    font-weight: bold;
+}
+
+
+.view-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin: -150px;
+    float: left;
+    perspective: 500px;
+}
+
+.view-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.view-card:hover .content {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+}
+
+.front,
+.back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    line-height: 300px;
+    color: #03446A;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+.back {
+    background: #03446A;
+    color: white;
+    transform: rotateY( 180deg );
+}
