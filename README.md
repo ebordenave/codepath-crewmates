@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 https://www.loom.com/share/3387f10b9c754258a6c07a80a5e30389?sid=60e8fed2-c61d-42bb-8358-7cc93dab6128
-<img src='https://www.loom.com/share/3387f10b9c754258a6c07a80a5e30389?sid=60e8fed2-c61d-42bb-8358-7cc93dab6128' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/8x5pDHb.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with Kap
